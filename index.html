@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <title>Sneakers | E-Commerce Webshop</title>
+</head>
+<body>
+    <header>
+        <div class="menu-wrapper">
+            <img src="images/icon-menu.svg" alt="" class="open">
+            <img src="images/icon-close.svg" alt="" class="close">
+            <img src="images/logo.svg" alt="" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+        <div class="user-functions">
+            <div class="cart-wrapper">
+                <img src="images/icon-cart.svg" alt="" class="cart">
+            </div>
+            <img src="images/image-avatar.png" alt="User Avatar" class="avatar">
+        </div>
+    </header>
+    <main>
+        <section class="gallery">
+           
+
+            <div class="gallery_mobile">
+                
+                <img src="images/image-product-1.jpg" alt="" class="product">
+                <img src="images/image-product-2.jpg" alt="" class="product">
+                <img src="images/image-product-3.jpg" alt="" class="product">
+                <img src="images/image-product-4.jpg" alt="" class="product">
+                <div class="overlay">
+                    <div class="arrow-bg"><img src="images/icon-previous.svg" role="button" alt="" class="prev arrow"></div>
+                    <div class="arrow-bg"><img src="images/icon-next.svg" role="button" alt="" class="next arrow"></div>
+                </div>
+            </div>
+            <div class="gallery_desktop">
+                <img src="images/image-product-1-thumbnail.jpg" alt="">
+                <img src="images/image-product-2-thumbnail.jpg" alt="">
+                <img src="images/image-product-3-thumbnail.jpg" alt="">
+                <img src="images/image-product-4-thumbnail.jpg" alt="">
+            </div>
+        </section>
+        <section class="product-data">
+            <div class="product-data_header">
+                <span class="subtitle">Sneaker Company</span>
+                <h1>Fall Limited Edition Sneakers</h1>
+                <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+            </div>
+            <div class="product-data_pricing">
+                <div>
+                    <span class="price">$125.00</span>
+                    <span class="discount">50%</span>
+                </div>
+                <div>
+                    <span class="original-price">$250.00</span>
+                </div>
+            </div>
+            <div class="form-wrapper">
+                <form action="">
+                    <label for="product-count" aria-label="Enter the amount you'd like to buy"></label>
+                    <input type="number" name="product-count" id="product-count">
+                    <img src="images/icon-minus.svg" alt="">
+                    <img src="images/icon-plus.svg" alt="">
+                
+                </form>
+                <a href="#"><img src="images/icon-cart.svg" alt="">Add to cart</a>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

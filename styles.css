@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+:root {
+    --Orange: hsl(26, 100%, 55%);
+    --Pale-orange: hsl(25, 100%, 94%);
+    --Very-dark-blue: hsl(220, 13%, 13%);
+    --Dark-grayish-blue: hsl(219, 9%, 45%);
+    --Grayish-blue: hsl(220, 14%, 75%);
+    --Light-grayish-blue: hsl(223, 64%, 98%);
+    --White: #fff;
+    --light-font: 400;
+    --bold-font: 700;
+    font-size: 16px;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans';
+    text-rendering: smooth;
+}
+
+
+img {
+    max-inline-size: 100vw;
+}
+
+header {
+    display: flex;
+    padding-inline: 1rem;
+    justify-content: space-between;
+}
+
+.avatar {
+    height:25px;
+}
+
+.logo {
+    padding-block: 1.5rem;
+}
+
+.user-functions,
+.menu-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav {
+    position: absolute;
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
+.gallery_mobile {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery_mobile img {
+    display: none;
+    object-fit: cover;
+    transform: scale(1.2);
+    transition: transform .3s ease;
+}
+
+.gallery_mobile img:first-child {
+    display: block;
+    
+}
+
+.gallery_mobile:hover .product {
+    transform: scale(1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1rem;
+}
+
+.arrow-bg {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.arrow {
+    height: 15px;
+    position: relative;
+}
+
+.prev {
+    transform: translateX(-15%);
+}
+
+.next {
+    transform: translateX(15%);
+}
+
+.gallery_desktop {
+    display: none;
+}
+
+.product-data {
+    padding: 1.5rem;
+}
+
+.subtitle {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .8rem;
+    color: var(--Dark-grayish-blue);
+    letter-spacing: 2px;
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: var(--Very-dark-blue);
+    margin-bottom: 1rem;
+}
+
+p {
+    color: var(--Dark-grayish-blue);
+    line-height: 1.5;
+    margin-bottom: 2em;
+}
+
+span {
+    display: inline-block;
+}
+
+.product-data_pricing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+
+
+.price {
+    color: var(--Very-dark-blue);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-right: 1rem;
+}
+
+.discount {
+    padding: .25em .5em;
+    
+    font-weight: 500;
+    color: #fff;
+    background-color: var(--Very-dark-blue);
+    border-radius: 5px;
+}
+
+.original-price {
+    font-weight: 600;
+    color: var(--Dark-grayish-blue);
+    text-decoration: line-through;
+}
