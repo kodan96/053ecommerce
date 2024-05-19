@@ -649,7 +649,7 @@ form {
 
     .lightbox-wrapper {
         position: relative;
-        max-width: 60%;
+        max-width: 40%;
     }
 
     .lightbox-wrapper img {
